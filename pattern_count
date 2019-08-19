@@ -1,0 +1,15 @@
+def pattern_search(text, pattern):
+    
+    bflen=len(text)
+    text=text.replace(pattern,'')
+    aflen=len(text)
+    patleng=len(pattern)
+    return (bflen-aflen)//patleng
+        
+#Use different values for text and pattern and test your program
+text = "MESMERIZING MESSAGE"
+pattern = "MES"
+result=pattern_search(text, pattern)
+print("The given text:",text)
+print("Pattern:",pattern)
+print("No. of occurrences of the pattern :",result)
